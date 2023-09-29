@@ -1,0 +1,25 @@
+sqlite3 dbdata.db
+
+CREATE TABLE complaint_reg(
+   ID INTEGER PRIMARY KEY AUTOINCREMENT,
+   complaint_datetime           TEXT      NOT NULL,
+   complaint_details       TEXT, 
+   citizen_contact       TEXT, 
+   complaint_status       TEXT,
+   derived_polarity       TEXT,
+   derived_department       TEXT
+);
+
+select count(*) from complaint_reg;
+select * from complaint_reg;
+
+drop table if exists complaint_reg;
+UPDATE complaint_reg SET complaint_status = 'Open' WHERE ID=2;
+
+select 
+ID , complaint_datetime , complaint_details , citizen_contact , complaint_status 
+from complaint_reg 
+WHERE ID = '3' 
+ORDER BY ID DESC LIMIT 1 
+
+DELETE FROM complaint_reg WHERE ID <= 55;

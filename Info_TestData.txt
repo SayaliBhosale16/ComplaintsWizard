@@ -1,0 +1,12 @@
+0 electicity 
+1 other
+2 pwd
+3 Sewage
+4 water supply
+
+Electrical appliances damaged
+damage of sewage pipeline
+Supply of contaminated water
+contaminated water supply
+garbage dump issuse
+garbage dump everywhere
